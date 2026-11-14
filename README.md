@@ -7,10 +7,10 @@ MIT, copyright (c) 2026 Leo; see `LICENSE`. The glyph data is Hugeicons (MIT, `L
 ## Install
 
 ```sh
-npm install github:designxdevelop/islandcn-vanilla#v0.1.0
+npm install islandcn-vanilla
 ```
 
-npm builds `dist/` on install (`prepare`). The output is ES modules with extensionless relative imports, made for a bundler (Vite, esbuild, webpack), not for loading straight into Node or a browser.
+The package ships built ES modules with extensionless relative imports, made for a bundler (Vite, esbuild, webpack), not for loading straight into Node or a browser.
 
 ## Use
 
@@ -38,7 +38,7 @@ upload.unmount();
 
 ## Develop
 
-`npm run verify` typechecks, runs the tests and builds.
+`npm run verify` typechecks, runs the tests and builds. `npm publish` runs it first (`prepublishOnly`).
 
 ## What is the original's, unchanged
 

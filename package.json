@@ -26,13 +26,22 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "prepare": "npm run build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "verify": "npm run typecheck && npm run test && npm run build"
+    "verify": "npm run typecheck && npm run test && npm run build",
+    "prepublishOnly": "npm run verify"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
     "vitest": "^5.1.0"
-  }
+  },
+  "keywords": [
+    "dynamic-island",
+    "islandcn",
+    "animation",
+    "spring",
+    "vanilla",
+    "typescript"
+  ],
+  "homepage": "https://github.com/designxdevelop/islandcn-vanilla#readme"
 }
